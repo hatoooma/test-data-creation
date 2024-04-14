@@ -1,0 +1,22 @@
+{
+  "name": "test-data-creation",
+  "version": "1.3.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hatoooma/test-data-creation.git"
+  },
+  "author": "Hatem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hatoooma/test-data-creation/issues"
+  },
+  "homepage": "https://github.com/hatoooma/test-data-creation#readme",
+  "dependencies": {
+    "randexp": "^0.5.3"
+  }
+}

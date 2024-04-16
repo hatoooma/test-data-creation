@@ -3,15 +3,15 @@ const generateStrings = require("./helper");
 
 // Generate random strings based on the schema and count
 /* schema: should be object like {
-  // optional
-  regex: /regex/,
+  // required
+  regex: /regex/, // or empty string "" if you want to use format
   testCase: "POSITIVE_CASE" or "NEGATIVE_CASE",
 
   // Optional
   format: {
-    eng: true,
+    en: true,
     case: "UPPER" or "LOWER" or "MIXED",
-    engNum: true,
+    enNum: true,
     ara: true,
     araNum: true,
     specialChars: true,

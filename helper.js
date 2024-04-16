@@ -1,26 +1,26 @@
 function generateString(stringFormat) {
-  const engSmall = "abcdefghijklmnopqrstuvwxyz";
-  const engCapital = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  const engNum = "0123456789";
-  const ar = "ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي";
+  const enSmall = "abcdefghijklmnopqrstuvwxyz";
+  const enCapital = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const enNum = "0123456789";
+  const ar = "ابتثجحخدذرزسشصضطظعغفقكلمنهوي";
   const arNum = "٠١٢٣٤٥٦٧٨٩";
   const specialChars = "!@#$%^&*()_+{}|:<>?~`-=[]\\;',./";
   let generatedString = "";
 
   // Generate English letters
-  if (stringFormat.eng) {
+  if (stringFormat.en) {
     if (stringFormat.case === "UPPER") {
-      generatedString += engCapital;
+      generatedString += enCapital;
     } else if (stringFormat.case === "LOWER") {
-      generatedString += engSmall;
+      generatedString += enSmall;
     } else {
-      generatedString += Math.random() < 0.5 ? engCapital : engSmall;
+      generatedString += Math.random() < 0.5 ? enCapital : enSmall;
     }
   }
 
   // Generate English numbers
-  if (stringFormat.engNum) {
-    generatedString += engNum;
+  if (stringFormat.enNum) {
+    generatedString += enNum;
   }
 
   // Generate Arabic letters
@@ -40,7 +40,7 @@ function generateString(stringFormat) {
 
   // Include spaces
   if (stringFormat.spaces) {
-    generatedString += " ";
+    generatedString += "          ";
   }
 
   // Generate string of desired length
